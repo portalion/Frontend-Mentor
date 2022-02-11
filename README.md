@@ -1,12 +1,10 @@
-# Frontend Mentor
-
 ## What is that repository for?
 In that repository i wanna post my results of Frontend Mentor challenges for Newbie level.
 
 ## List of Challenges
 
-### Newbie 
-| Done?                 | Name                                                      |
+..* Newbie Level
+| Done?                 | Name of challenge                                         |
 | :-------------------: | --------------------------------------------------------- |
 | :white_large_square:  | QR code component                                         |
 | :white_large_square:  | NFT preview card component                                |
@@ -28,8 +26,8 @@ In that repository i wanna post my results of Frontend Mentor challenges for New
 | :white_large_square:  | Huddle landing page with a single introductory section    |
 
 ## Technologies used
-HTML
-CSS
-Vanilla JS
+..* HTML
+..* CSS
+..* Vanilla JS
 
 ## What i've learned
