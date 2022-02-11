@@ -4,6 +4,7 @@ In that repository i wanna post my results of Frontend Mentor challenges for New
 ## List of Challenges
 
 - Newbie Level
+
 | Done?                 | Name of challenge                                         |
 | :-------------------: | --------------------------------------------------------- |
 | :white_large_square:  | QR code component                                         |
