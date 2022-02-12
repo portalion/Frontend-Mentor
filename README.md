@@ -34,3 +34,4 @@ In that repository i want to post my results of Frontend Mentor challenges for N
 ## What I've learned
 - Responsive Design
 - Basic hosting with Github Pages
+- Flexbox
