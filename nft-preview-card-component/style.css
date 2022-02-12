@@ -37,27 +37,54 @@ body {
     display: flex;
     flex-direction: column;
     gap: 1.3rem;
+    box-shadow: 0 2rem 2rem 0 hsl(216, 53%, 9%);
+
 }
 
 .card__image {
     width: 100%;
+    aspect-ratio: 1;
+    background: url("images/image-equilibrium.jpg");
+    background-size: 100%;
     border-radius: 0.5rem;
-
     position: relative;
+    overflow: hidden;
 }
 
+.card__image::before,
 .card__image::after {
+    content: "";
     position: absolute;
     top: 0;
     left: 0;
+
     width: 100%;
     height: 100%;
-    background-color: red;
+
+    opacity: 0;
+    transition: all 0.2s ease-in-out;
+}
+
+.card__image::after {
+    background: url("images/icon-view.svg") no-repeat center;
+}
+
+.card__image::before {
+    background: var(--accent-color);
+}
+
+.card__image:hover::after {
+    opacity: 1;
+}
+
+.card__image:hover::before {
+    opacity: 0.5;
 }
 
 .card__title {
     font-size: 1.4rem;
     color: white;
+    transition: all 0.2s ease-in-out;
 }
 
 .card__title:hover {
@@ -88,6 +115,7 @@ body {
 
 .accent {
     color: white;
+    transition: all 0.2s ease-in-out;
 }
 
 .accent:hover {
@@ -101,13 +129,19 @@ body {
 }
 
 .card__value {
-    display: flex;
-    gap: 0.4rem;
     width: 50%;
+
+    display: flex;
     justify-content: flex-start;
     align-items: center;
+
+    gap: 0.4rem;
 }
 
 .card__value--right {
     justify-content: flex-end;
+}
+
+.card__value--blue {
+    color: var(--accent-color);
 }
