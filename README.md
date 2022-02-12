@@ -3,7 +3,7 @@ In that repository i wanna post my results of Frontend Mentor challenges for New
 
 ## List of Challenges
 
-- Newbie Level
+### Newbie Level
 
 | Done?                 | Name of challenge                                         |
 | :-------------------: | --------------------------------------------------------- |
