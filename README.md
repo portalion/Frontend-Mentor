@@ -31,6 +31,6 @@ In that repository i want to post my results of Frontend Mentor challenges for N
 - CSS
 - Vanilla JS
 
-## What i've learned
+## What I've learned
 - Responsive Design
 - Basic hosting with Github Pages
