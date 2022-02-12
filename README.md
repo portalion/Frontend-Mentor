@@ -32,3 +32,4 @@ In that repository i wanna post my results of Frontend Mentor challenges for New
 - Vanilla JS
 
 ## What i've learned
+- Responsive Design
