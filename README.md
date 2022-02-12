@@ -7,7 +7,7 @@ In that repository i wanna post my results of Frontend Mentor challenges for New
 
 | Done?                 | Name of challenge                                         |
 | :-------------------: | --------------------------------------------------------- |
-| :white_large_square:  | QR code component                                         |
+| [ ] | QR code component                                         |
 | :white_large_square:  | NFT preview card component                                |
 | :white_large_square:  | Equalizer landing page                                    |
 | :white_large_square:  | Order summary component                                   |
