@@ -8,7 +8,7 @@ In that repository i want to post my results of Frontend Mentor challenges for N
 | Done?                 | Name of challenge                                         | Link  |
 | :-------------------: | --------------------------------------------------------- | ----- |        
 | :white_check_mark:    | QR code component | [Check it here!](https://portalion.github.io/Frontend-Mentor-Newbie/Qr_code_component/) |
-| :white_large_square:  | NFT preview card component | [Check it here!](https://portalion.github.io/Frontend-Mentor-Newbie/nft-preview-card-component/) |
+| :white_check_mark:  | NFT preview card component | [Check it here!](https://portalion.github.io/Frontend-Mentor-Newbie/nft-preview-card-component/) |
 | :white_large_square:  | Equalizer landing page                                    |       |
 | :white_large_square:  | Order summary component                                   |       |
 | :white_large_square:  | Stats preview card component                              |       |
