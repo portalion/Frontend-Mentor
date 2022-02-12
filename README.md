@@ -1,5 +1,5 @@
 ## What is that repository for?
-In that repository i wanna post my results of Frontend Mentor challenges for Newbie level.
+In that repository i want to post my results of Frontend Mentor challenges for Newbie level.
 
 ## List of Challenges
 
@@ -33,3 +33,4 @@ In that repository i wanna post my results of Frontend Mentor challenges for New
 
 ## What i've learned
 - Responsive Design
+- Basic hosting with Github Pages
