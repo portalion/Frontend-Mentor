@@ -1,5 +1,112 @@
 :root {
-
+    --button-background: hsl(245, 75%, 52%);
+    --main-background: hsl(225, 100%, 94%);
+    --card-background: hsl(225, 100%, 98%);
+    --text-color: hsl(224, 23%, 55%);
+    --title-color: hsl(223, 47%, 23%);
 
     font-family: 'Red Hat Display', sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: var(--text-color);
+}
+
+body {
+    background: url("images/pattern-background-mobile.svg") no-repeat var(--main-background);
+    min-height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card {
+    width: 90%;
+    overflow: hidden;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    align-items: center;
+    text-align: center;
+    border-radius: 1.5rem;
+    padding-bottom: 2rem;
+    max-width: 375px;
+    box-shadow: 0 1rem 3rem -1.7rem var(--text-color);
+}
+
+.card__header {
+    width: 100%;
+}
+
+.card__purchase-plan {
+    display: flex;
+    width: 85%;
+    align-items: center;
+    background-color: var(--card-background);
+    padding: 1rem;
+    border-radius: 0.8rem;
+    gap: 1rem;
+}
+
+.card__wrapper {
+    flex-grow: 1;
+    text-align: start;
+}
+
+.card__plan-name {
+    font-size: 1rem;
+    color: var(--title-color)
+}
+
+.card__change-link {
+    color: var(--button-background);
+    transition: all 0.2s;
+}
+
+.card__title,
+.card__description {
+    width: 80%;
+    line-height: 1.5rem;
+}
+
+.card__title {
+    color: var(--title-color);
+    font-size: 1.5rem;
+}
+
+.card__button {
+    background-color: var(--button-background);
+    border: none;
+    color: white;
+    font-family: 'Red Hat Display', sans-serif;
+    width: 85%;
+    padding: 1rem;
+    border-radius: 0.6rem;
+    font-size: 1rem;
+    box-shadow: 0 1rem 1rem 0.3rem var(--main-background);
+    transition: all 0.2s;
+}
+
+.card__cancel {
+    text-decoration: none;
+    font-weight: 700;
+    transition: all 0.2s;
+}
+
+.card__button:hover {
+    opacity: 0.75;
+}
+
+.card__change-link:hover {
+    text-decoration: none;
+    opacity: 0.75;
+}
+
+.card__cancel:hover {
+    color: var(--title-color);
 }
