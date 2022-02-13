@@ -17,6 +17,7 @@
 
 body {
     background: url("images/pattern-background-mobile.svg") no-repeat var(--main-background);
+    background-size: 100%;
     min-height: 100vh;
 
     display: flex;
@@ -109,4 +110,11 @@ body {
 
 .card__cancel:hover {
     color: var(--title-color);
+}
+
+@media (min-width: 700px) {
+    body {
+        background: url("images/pattern-background-desktop.svg") no-repeat var(--main-background);
+        background-size: 100%;
+    }
 }
