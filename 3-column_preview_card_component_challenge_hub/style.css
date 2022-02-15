@@ -1,0 +1,12 @@
+:root {
+    --first-column-background: hsl(31, 77%, 52%);
+    --second-column-backgroun: hsl(184, 100%, 22%);
+    --third-column-backgroun: hsl(179, 100%, 13%);
+    --paragraph-color: hsla(0, 0%, 100%, 0.75);
+    --text-color: hsl(0, 0%, 95%);
+
+    font-size: calc(15 / 16rem);
+    /*font-family: 'Big Shoulders Display', cursive;
+
+    font-family: 'Lexend Deca', sans-serif; */
+}
