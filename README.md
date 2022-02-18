@@ -18,7 +18,7 @@ I'm just a computer science student, who wants to be better at web developing.
 | :white_large_square:  | Meet landing page                                         |       |
 | :white_check_mark:    | 3-column preview card component | [Check it here!](https://portalion.github.io/Frontend-Mentor/3-column_preview_card_component_challenge_hub/) |
 | :white_large_square:  | Pod request access landing page                           |       |
-| :white_large_square:  | Profile card component                                    |       |
+| :white_check_mark:    | Profile card component | [Check it here!](https://portalion.github.io/Frontend-Mentor/profile_card_component/) |
 | :white_large_square:  | FAQ accordion card                                        |       |
 | :white_large_square:  | Social proof section                                      |       |
 | :white_large_square:  | Article preview component                                 |       |
