@@ -13,7 +13,7 @@ In that repository i want to post my results of Frontend Mentor challenges for N
 | :white_check_mark:    | Order summary component | [Check it here!](https://portalion.github.io/Frontend-Mentor/Order_summary_component/) |
 | :white_large_square:  | Stats preview card component                              |       |
 | :white_large_square:  | Meet landing page                                         |       |
-| :white_large_square:  | 3-column preview card component                           |       |
+| :white_check_mark:    | 3-column preview card component | [Check it here!](https://portalion.github.io/Frontend-Mentor/3-column_preview_card_component_challenge_hub/) |
 | :white_large_square:  | Pod request access landing page                           |       |
 | :white_large_square:  | Profile card component                                    |       |
 | :white_large_square:  | FAQ accordion card                                        |       |
@@ -35,3 +35,5 @@ In that repository i want to post my results of Frontend Mentor challenges for N
 - Responsive Design
 - Basic hosting with Github Pages
 - Flexbox
+- CSS Grid
+- Mix-blend-mode property
