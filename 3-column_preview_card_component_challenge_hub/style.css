@@ -78,7 +78,6 @@ body {
 
     padding: 1rem 2rem;
     border-radius: 2rem;
-    box-sizing: content-box;
 }
 
 .button:hover {
@@ -86,4 +85,13 @@ body {
     color: white;
     mix-blend-mode: normal;
     box-shadow: 0 0 0 2px white;
+}
+
+@media (max-width: 830px) {
+    .component {
+        max-width: 20rem;
+        width: 90%;
+        grid-template-columns: 1fr;
+        margin: 3rem auto;
+    }
 }
