@@ -6,13 +6,40 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/x-icon" href="images/favicon-32x32.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" href="style.css">
     <title>profile card component</title>
 </head>
 
 <body>
-
+    <img class="background-top" src="images/bg-pattern-top.svg">
+    <img class="background-bottom" src="images/bg-pattern-bottom.svg">
+    <main class="card">
+        <header class="card__hero">
+            <img class="card__avatar" src="images/image-victor.jpg" alt="avatar">
+        </header>
+        <section class="card__title">
+            <h1 class="card__name">Victor Crest <span class="card__age">26</span></h1>
+            <h2 class="card__town">London</h2>
+        </section>
+        <section class="card__description">
+            <div class="card__info">
+                <h2 class="card__info-title">80K</h2>
+                <h3 class="card__info-description">Followers</h3>
+            </div>
+            <div class="card__info">
+                <h2 class="card__info-title">803K</h2>
+                <h3 class="card__info-description">Likes</h3>
+            </div>
+            <div class="card__info">
+                <h2 class="card__info-title">1.4K</h2>
+                <h3 class="card__info-description">Photos</h3>
+            </div>
+        </section>
+    </main>
 </body>
 
 </html>

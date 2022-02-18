@@ -1,7 +1,118 @@
 :root {
     --background: hsl(185, 75%, 39%);
-    --text-color: hsl(229, 23%, 23%);
-    --title-color: hsl(227, 10%, 46%);
-    --paragraph: hsl(0, 0%, 59%);
+    --title-color: hsl(229, 23%, 23%);
+    --text-color: hsl(227, 10%, 46%);
+    --paragraph: hsl(0, 0%, 90%);
+
     font-size: calc(18rem / 16);
+    font-family: 'Kumbh Sans', sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--background);
+    overflow: hidden;
+    display: flex;
+    min-height: 100vh;
+    justify-content: center;
+    align-items: center;
+
+    position: relative;
+}
+
+.background-top,
+.background-bottom {
+    position: absolute;
+    z-index: -1;
+}
+
+.background-top {
+    top: 0;
+    right: 50%;
+    transform: translateY(-50%);
+}
+
+.background-bottom {
+    bottom: 0;
+    left: 50%;
+    transform: translateY(50%);
+}
+
+.card {
+    max-width: 20rem;
+    width: 90%;
+    background-color: white;
+    display: grid;
+    grid-template-rows: 7.7778rem 9rem auto;
+    grid-template-columns: 1fr;
+
+    border-radius: 1rem;
+    overflow: hidden;
+    text-align: center;
+
+    box-shadow: 0 0 2rem -1.3rem black;
+}
+
+.card__hero {
+    background: url(images/bg-pattern-card.svg);
+    background-size: contain;
+    position: relative;
+}
+
+.card__avatar {
+    border-radius: 50%;
+    border: 0.3rem solid white;
+    justify-self: center;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%, 50%);
+}
+
+.card__town,
+.card__info-description,
+.card__age {
+    font-weight: 400;
+    font-size: 0.9rem;
+    color: var(--text-color);
+}
+
+.card__description {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    padding: 1rem;
+    justify-items: center;
+    border-top: 1px solid var(--paragraph);
+
+}
+
+.card__town {
+    font-size: 0.9rem;
+}
+
+.card__info-description {
+    font-size: 0.6rem;
+    letter-spacing: 0.1rem;
+}
+
+.card__age {
+    font-size: 1.1rem;
+    margin-left: 0.15rem;
+}
+
+.card__name,
+.card__info-title {
+    font-size: 1.1rem;
+    color: var(--title-color);
+}
+
+.card__title {
+    align-self: end;
+    line-height: 2rem;
+    margin-bottom: 1rem;
 }
