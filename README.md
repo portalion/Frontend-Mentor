@@ -1,6 +1,9 @@
 ## What is that repository for?
 In that repository i want to post my results of Frontend Mentor challenges for Newbie level.
 
+## Who am I?
+I'm just a computer science student, who wants to be better at web developing.
+
 ## List of Challenges
 
 ### Newbie Level
