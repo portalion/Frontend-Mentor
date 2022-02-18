@@ -1,0 +1,7 @@
+:root {
+    --background: hsl(185, 75%, 39%);
+    --text-color: hsl(229, 23%, 23%);
+    --title-color: hsl(227, 10%, 46%);
+    --paragraph: hsl(0, 0%, 59%);
+    font-size: calc(18rem / 16);
+}
