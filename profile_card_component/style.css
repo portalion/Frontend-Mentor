@@ -22,25 +22,9 @@ body {
     justify-content: center;
     align-items: center;
 
-    position: relative;
-}
-
-.background-top,
-.background-bottom {
-    position: absolute;
-    z-index: -1;
-}
-
-.background-top {
-    top: 0;
-    right: 50%;
-    transform: translateY(-50%);
-}
-
-.background-bottom {
-    bottom: 0;
-    left: 50%;
-    transform: translateY(50%);
+    background-image: url("images/bg-pattern-top.svg"), url("images/bg-pattern-bottom.svg");
+    background-repeat: no-repeat;
+    background-position: right 50vw top calc(-978px / 2), left 50vw bottom calc(-978px / 2);
 }
 
 .card {
