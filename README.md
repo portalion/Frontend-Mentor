@@ -22,7 +22,7 @@ I'm just a computer science student, who wants to be better at web developing.
 | :white_large_square:  | FAQ accordion card                                        |       |
 | :white_large_square:  | Social proof section                                      |       |
 | :white_large_square:  | Article preview component                                 |       |
-| :white_large_square:  | Four card feature section | [Check it here!](https://portalion.github.io/Frontend-Mentor/four_card_feature_section/) |
+| :white_check_mark:    | Four card feature section | [Check it here!](https://portalion.github.io/Frontend-Mentor/four_card_feature_section/) |
 | :white_large_square:  | Base Apparel comming soon page                            |       |
 | :white_large_square:  | Intro component with sign-up form                         |       |
 | :white_large_square:  | Single price grid component                               |       |
