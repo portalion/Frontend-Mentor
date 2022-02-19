@@ -1,5 +1,6 @@
 ## What is that repository for?
 In that repository i want to post my results of Frontend Mentor challenges for Newbie level.
+In each project folder you can find readme with screenshots of mobile and normal versions of site.
 
 ## Who am I?
 I'm just a computer science student, who wants to be better at web developing.
