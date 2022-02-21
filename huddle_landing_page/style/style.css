@@ -99,16 +99,4 @@ footer {
 .contact:hover {
   outline-color: #e882e8;
 }
-
-.twitter {
-  background-image: url("../images/logo-twitter.svg");
-}
-
-.instagram {
-  background-image: url("../images/logo-instagram.svg");
-}
-
-.facebook {
-  background-image: url("../images/logo-facebook.svg");
-}
 /*# sourceMappingURL=style.css.map */

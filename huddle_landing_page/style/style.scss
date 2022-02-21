@@ -65,9 +65,9 @@ footer {
 }
 
 .contact {
+    font-family:FontAwesome;
     display: inline-block;
     width: 1.3rem;
-    aspect-ratio: 1;
     background-position: center center;
     background-repeat: no-repeat;
     border-radius: 50%;
@@ -75,19 +75,10 @@ footer {
     outline-offset: 5px;
     padding: 0.4rem;
     transition: all 0.2s;
+    color: white;
+    font-size: 200px;
     &:hover {
         outline-color: $magenta;
+        color: &magenta
     }
-}
-
-.twitter {
-    background-image: url("../images/logo-twitter.svg");
-}
-
-.instagram {
-    background-image: url("../images/logo-instagram.svg");
-}
-
-.facebook {
-    background-image: url("../images/logo-facebook.svg");
 }
