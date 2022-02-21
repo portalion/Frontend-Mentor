@@ -1,6 +1,16 @@
 $violet: hsl(257, 40%, 49%);
 $magenta: hsl(300, 69%, 71%);
 
-$title: 'Open Sans', sans-serif;
+$text: 'Open Sans', sans-serif;
 
-$text: 'Poppins', sans-serif;
+$title: 'Poppins', sans-serif;
+
+:root{
+    font-size: 1rem;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}

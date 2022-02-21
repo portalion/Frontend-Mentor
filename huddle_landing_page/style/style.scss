@@ -1,0 +1,93 @@
+@import "./variables";
+
+body {
+    background-color: $violet;
+    background-image: url("../images/bg-mobile.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    
+    min-height: 100vh;
+    padding: 2.2rem;
+}
+
+.logo {
+    width: 40%;
+    margin-bottom: 3.6rem;
+}
+
+main {
+    text-align: center;
+    color: white;
+
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+}
+
+.mockup-image {
+    width: 100%;
+}
+
+.title {
+    font-family: $title;
+    text-transform: capitalize;
+    margin-bottom: 1rem;
+}
+
+.description {
+    font-family: $text;
+    line-height: 1.5rem;
+    margin-bottom: 1.3rem;
+}
+
+.register-button {
+    border: none;
+    font-family: $text;
+    color: $violet;
+    background-color: white;
+    padding: 0.7rem 5rem;
+    border-radius: 2rem;
+    box-shadow: 0 1rem 2rem -1rem black; 
+    margin-bottom: 3rem;
+
+    transition: all 0.2s;
+    &:hover {
+        background-color: $magenta;
+        color: white;
+    }
+}
+
+footer {
+    display: flex;
+    gap: 2rem;
+    margin: 0 auto;
+    justify-content: center;
+}
+
+.contact {
+    display: inline-block;
+    width: 1.3rem;
+    aspect-ratio: 1;
+    background-position: center center;
+    background-repeat: no-repeat;
+    border-radius: 50%;
+    outline: 1px solid white;
+    outline-offset: 5px;
+    padding: 0.4rem;
+    transition: all 0.2s;
+    &:hover {
+        outline-color: $magenta;
+    }
+}
+
+.twitter {
+    background-image: url("../images/logo-twitter.svg");
+}
+
+.instagram {
+    background-image: url("../images/logo-instagram.svg");
+}
+
+.facebook {
+    background-image: url("../images/logo-facebook.svg");
+}
