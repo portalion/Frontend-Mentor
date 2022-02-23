@@ -10,3 +10,16 @@ $font: 'Karla', sans-serif;
     padding: 0;
     box-sizing: border-box;
 }
+
+@mixin text-colors($title, $subtitle, $description)
+{
+    .title {
+        color: $title;
+    } 
+    .subtitle {
+        color: $subtitle;
+    }
+    .description {
+        color: $description;
+    }
+}
