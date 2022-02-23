@@ -17,7 +17,6 @@ body {
       grid-template-columns: 1fr;
   margin: 4rem auto;
   width: 85%;
-  background-color: #2ab2af;
   max-width: 21.875rem;
   border-radius: 0.4rem;
   overflow: hidden;
@@ -66,6 +65,10 @@ section:nth-child(1) .subtitle {
 
 section:nth-child(1) .description {
   color: #98a6bd;
+}
+
+section:nth-child(2) {
+  background-color: #2ab2af;
 }
 
 section:nth-child(2) .title {

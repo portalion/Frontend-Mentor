@@ -10,7 +10,6 @@ body {
     grid-template-columns: 1fr;
     margin: 4rem auto;
     width: 85%;
-    background-color: $cyan;
     max-width: 21.875rem;
     border-radius: 0.4rem;
     overflow: hidden;
@@ -47,6 +46,7 @@ section:nth-child(1)
 
 section:nth-child(2)
 {
+    background-color: $cyan;
     @include text-colors($blue, $blue, $blue);
 
     .period {
@@ -58,8 +58,8 @@ section:nth-child(2)
 
 section:nth-child(3)
 {
+    background-color: hsl(179, 53%, 55%);
     @include text-colors(white, white, $blue);
-    background-color: hsl(179, 53%, 55%);;
 }
 
 .button {
