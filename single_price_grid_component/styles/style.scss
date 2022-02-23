@@ -74,3 +74,22 @@ section:nth-child(3)
     font-weight: 700;
     box-shadow: 0 1rem 2rem -1.05rem black;
 }
+
+@media (min-width: 650px)
+{
+    body {
+        display: flex;
+        min-height: 100vh;
+        justify-content: center;
+        align-items: center;
+    }
+    .component {
+        grid-template-columns: 1fr 1fr;
+        max-width: 2 * 21.875rem;
+    }
+    section:first-child{
+        grid-column: span 2;
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+    }
+}
