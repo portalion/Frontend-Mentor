@@ -41,8 +41,4 @@ I'm just a computer science student, who wants to be better at web developing.
 - Flexbox
 - CSS Grid
 - Mix-blend-mode property
-<<<<<<< HEAD
-- Sass
-=======
 - Sass/scss
->>>>>>> 5f7dff99458175a91af5f714050a73c791229494
