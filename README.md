@@ -26,7 +26,7 @@ I'm just a computer science student, who wants to be better at web developing.
 | :white_check_mark:    | Four card feature section | [Check it here!](https://portalion.github.io/Frontend-Mentor/four_card_feature_section/) |
 | :white_large_square:  | Base Apparel comming soon page                            |       |
 | :white_large_square:  | Intro component with sign-up form                         |       |
-| :white_large_square:  | Single price grid component                               |       |
+| :white_check_mark:    | Single price grid component | [Check it here!](https://portalion.github.io/Frontend-Mentor/single_price_grid_component/) |
 | :white_large_square:  | Ping single column coming soon page                       |       |
 | :white_large_square:  | Huddle landing page with a single introductory section    |       |
 
@@ -41,4 +41,8 @@ I'm just a computer science student, who wants to be better at web developing.
 - Flexbox
 - CSS Grid
 - Mix-blend-mode property
+<<<<<<< HEAD
 - Sass
+=======
+- Sass/scss
+>>>>>>> 5f7dff99458175a91af5f714050a73c791229494

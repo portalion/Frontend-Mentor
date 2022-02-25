@@ -1,0 +1,25 @@
+$cyan: hsl(179, 62%, 43%);
+$yellow: hsl(71, 73%, 54%);
+$blue:hsl(204, 43%, 93%);
+$gray: hsl(218, 22%, 67%);
+
+$font: 'Karla', sans-serif;
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@mixin text-colors($title, $subtitle, $description)
+{
+    .title {
+        color: $title;
+    } 
+    .subtitle {
+        color: $subtitle;
+    }
+    .description {
+        color: $description;
+    }
+}
