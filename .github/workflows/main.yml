@@ -1,7 +1,7 @@
 name: Deploy blazor to GitHub Pages
 on:
   push:
-    branches: [ main, Development ]
+    branches: [ main ]
 jobs:
   deploy-to-github-pages:
     runs-on: ubuntu-latest
