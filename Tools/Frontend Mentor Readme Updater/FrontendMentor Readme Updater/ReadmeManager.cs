@@ -1,4 +1,5 @@
 ﻿using System.Runtime.Serialization.Json;
+using System.Text;
 using System.Text.RegularExpressions;
 
 namespace FrontendMentor_Readme_Updater;
@@ -14,6 +15,7 @@ public struct ReadmeChallengeListData
 public class ReadmeManager
 {
     readonly string readmePath;
+    readonly string listOfChallengesTag = "List of Challenges";
 
     public ReadmeManager(string readmePath)
     {
@@ -25,7 +27,7 @@ public class ReadmeManager
         Regex regex = new(@"^## ", RegexOptions.Multiline);
         var text = File.ReadAllText(readmePath);
         var paragraphs = regex.Split(text);
-        var challengeList = paragraphs.Where(s => s.StartsWith("List of Challenges")).FirstOrDefault();
+        var challengeList = paragraphs.Where(s => s.StartsWith(listOfChallengesTag)).FirstOrDefault();
         
         if (string.IsNullOrEmpty(challengeList))
         {
@@ -49,6 +51,8 @@ public class ReadmeManager
             result.Add(title, new List<ReadmeChallengeListData>());
             foreach(var row in tableElements)
             {
+                if (string.IsNullOrEmpty(row))
+                    continue;
                 var challengeData = new ReadmeChallengeListData();
 
                 var rowValues = row.Split("|").Select(row=> row.Trim()).Skip(1).SkipLast(1).ToArray();
@@ -94,9 +98,11 @@ public class ReadmeManager
             {
                 if (toMerge[difficultyData.Key].Exists(a => a.nameOfChallenge == challengeData.nameOfChallenge)) 
                 {
-                    var found = toMerge[difficultyData.Key].Find(a => a.nameOfChallenge == challengeData.nameOfChallenge);
+                    var foundIndex = toMerge[difficultyData.Key].FindIndex(a => a.nameOfChallenge == challengeData.nameOfChallenge);
+                    var found = toMerge[difficultyData.Key][foundIndex];
                     found.link = challengeData.link;
                     found.doneText = challengeData.doneText;
+                    toMerge[difficultyData.Key][foundIndex] = found;
                 }
                 else toMerge[difficultyData.Key].Add(challengeData);
             }
@@ -110,5 +116,37 @@ public class ReadmeManager
         var mappedFrontendMentorChallenges = MapFrontendMentorDataToReadmeData(dataToSwap);
         var mergedChallenges = MergeData(readmeChallenges, mappedFrontendMentorChallenges).OrderBy(a => a.Key);
 
+        Regex regex = new(@"^## ", RegexOptions.Multiline);
+        var text = File.ReadAllText(readmePath);
+        var paragraphs = regex.Split(text);
+
+        StringBuilder buildTextForReadme = new StringBuilder();
+        foreach (var paragraph in paragraphs) 
+        { 
+            if(paragraph.StartsWith(listOfChallengesTag))
+            {
+                buildTextForReadme.AppendLine("## List of Challenges");
+                buildTextForReadme.AppendLine();
+
+                foreach(var difficultySection in mergedChallenges)
+                {
+                    buildTextForReadme.AppendLine($"### {difficultySection.Key}");
+                    buildTextForReadme.AppendLine();
+                    buildTextForReadme.AppendLine("| Done?                 | Name of challenge                                         | Link  |");
+                    buildTextForReadme.AppendLine("| :-------------------: | --------------------------------------------------------- | ----- |");
+                    foreach(var row in difficultySection.Value)
+                    {
+                        buildTextForReadme.AppendLine($"| {row.doneText} | {row.nameOfChallenge} | {row.link} |");
+                    }
+                    buildTextForReadme.AppendLine();
+                }
+            }
+            else if(!string.IsNullOrEmpty(paragraph))
+            {
+                buildTextForReadme.Append("## ");
+                buildTextForReadme.Append(paragraph);
+            }
+        }
+        File.WriteAllText(readmePath, buildTextForReadme.ToString());
     }
 }
