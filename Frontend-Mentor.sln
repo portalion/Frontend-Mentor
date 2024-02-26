@@ -9,6 +9,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FrontendMentorBlazorSolutio
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{A79E7948-C6B1-4E13-AC02-5B2FDA45B6FC}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FrontentMentorBlazorSolutionTests", "tests\FrontentMentorBlazorSolutionTests\FrontentMentorBlazorSolutionTests.csproj", "{4B7B2243-AD86-41E1-BF61-404C8D568CC5}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -19,12 +21,17 @@ Global
 		{28E6CD01-BC23-456E-8969-9F57319F1884}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{28E6CD01-BC23-456E-8969-9F57319F1884}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{28E6CD01-BC23-456E-8969-9F57319F1884}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4B7B2243-AD86-41E1-BF61-404C8D568CC5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4B7B2243-AD86-41E1-BF61-404C8D568CC5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4B7B2243-AD86-41E1-BF61-404C8D568CC5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4B7B2243-AD86-41E1-BF61-404C8D568CC5}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{28E6CD01-BC23-456E-8969-9F57319F1884} = {F612714A-0C4D-4A2D-A9E6-48DC234E882D}
+		{4B7B2243-AD86-41E1-BF61-404C8D568CC5} = {A79E7948-C6B1-4E13-AC02-5B2FDA45B6FC}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {AA3674EE-92E2-4277-8F83-EABC8F9A2D8D}
