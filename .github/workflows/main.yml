@@ -13,6 +13,8 @@ jobs:
           dotnet-version: 8.0.x
       - name: Publish .NET Core Project
         run: dotnet publish FrontendMentorBlazorSolution.csproj -c Release -o release --nologo
+      - name: Change base-tag in index.html from / to BlazorGitHubPagesDemo
+        run: sed -i 's/<base href="\/" \/>/<base href="\/Frontend-Mentor\/" \/>/g' release/wwwroot/index.html
       - name: Commit wwwroot to GitHub Pages
         uses: JamesIves/github-pages-deploy-action@3.7.1
         with:
